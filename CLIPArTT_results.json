@@ -1,0 +1,254 @@
+[
+    {
+        "learning_rate": 0.001,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "steps": 3,
+        "accuracy": 0.7019607843137254
+    },
+    {
+        "learning_rate": 0.001,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "steps": 5,
+        "accuracy": 0.7098039215686275
+    },
+    {
+        "learning_rate": 0.001,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "steps": 10,
+        "accuracy": 0.7058823529411765
+    },
+    {
+        "learning_rate": 0.001,
+        "momentum": 0.9,
+        "weight_decay": 0.001,
+        "steps": 3,
+        "accuracy": 0.7235294117647059
+    },
+    {
+        "learning_rate": 0.001,
+        "momentum": 0.9,
+        "weight_decay": 0.001,
+        "steps": 5,
+        "accuracy": 0.7254901960784313
+    },
+    {
+        "learning_rate": 0.001,
+        "momentum": 0.9,
+        "weight_decay": 0.001,
+        "steps": 10,
+        "accuracy": 0.7156862745098039
+    },
+    {
+        "learning_rate": 0.001,
+        "momentum": 0.99,
+        "weight_decay": 0.0001,
+        "steps": 3,
+        "accuracy": 0.7098039215686275
+    },
+    {
+        "learning_rate": 0.001,
+        "momentum": 0.99,
+        "weight_decay": 0.0001,
+        "steps": 5,
+        "accuracy": 0.707843137254902
+    },
+    {
+        "learning_rate": 0.001,
+        "momentum": 0.99,
+        "weight_decay": 0.0001,
+        "steps": 10,
+        "accuracy": 0.696078431372549
+    },
+    {
+        "learning_rate": 0.001,
+        "momentum": 0.99,
+        "weight_decay": 0.001,
+        "steps": 3,
+        "accuracy": 0.703921568627451
+    },
+    {
+        "learning_rate": 0.001,
+        "momentum": 0.99,
+        "weight_decay": 0.001,
+        "steps": 5,
+        "accuracy": 0.7019607843137254
+    },
+    {
+        "learning_rate": 0.001,
+        "momentum": 0.99,
+        "weight_decay": 0.001,
+        "steps": 10,
+        "accuracy": 0.7
+    },
+    {
+        "learning_rate": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "steps": 3,
+        "accuracy": 0.7019607843137254
+    },
+    {
+        "learning_rate": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "steps": 5,
+        "accuracy": 0.6882352941176471
+    },
+    {
+        "learning_rate": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "steps": 10,
+        "accuracy": 0.6666666666666666
+    },
+    {
+        "learning_rate": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.001,
+        "steps": 3,
+        "accuracy": 0.6823529411764706
+    },
+    {
+        "learning_rate": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.001,
+        "steps": 5,
+        "accuracy": 0.6705882352941176
+    },
+    {
+        "learning_rate": 0.01,
+        "momentum": 0.9,
+        "weight_decay": 0.001,
+        "steps": 10,
+        "accuracy": 0.6803921568627451
+    },
+    {
+        "learning_rate": 0.01,
+        "momentum": 0.99,
+        "weight_decay": 0.0001,
+        "steps": 3,
+        "accuracy": 0.6745098039215687
+    },
+    {
+        "learning_rate": 0.01,
+        "momentum": 0.99,
+        "weight_decay": 0.0001,
+        "steps": 5,
+        "accuracy": 0.6666666666666666
+    },
+    {
+        "learning_rate": 0.01,
+        "momentum": 0.99,
+        "weight_decay": 0.0001,
+        "steps": 10,
+        "accuracy": 0.6568627450980392
+    },
+    {
+        "learning_rate": 0.01,
+        "momentum": 0.99,
+        "weight_decay": 0.001,
+        "steps": 3,
+        "accuracy": 0.6666666666666666
+    },
+    {
+        "learning_rate": 0.01,
+        "momentum": 0.99,
+        "weight_decay": 0.001,
+        "steps": 5,
+        "accuracy": 0.6588235294117647
+    },
+    {
+        "learning_rate": 0.01,
+        "momentum": 0.99,
+        "weight_decay": 0.001,
+        "steps": 10,
+        "accuracy": 0.6392156862745098
+    },
+    {
+        "learning_rate": 0.1,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "steps": 3,
+        "accuracy": 0.5607843137254902
+    },
+    {
+        "learning_rate": 0.1,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "steps": 5,
+        "accuracy": 0.03333333333333333
+    },
+    {
+        "learning_rate": 0.1,
+        "momentum": 0.9,
+        "weight_decay": 0.0001,
+        "steps": 10,
+        "accuracy": 0.0196078431372549
+    },
+    {
+        "learning_rate": 0.1,
+        "momentum": 0.9,
+        "weight_decay": 0.001,
+        "steps": 3,
+        "accuracy": 0.0196078431372549
+    },
+    {
+        "learning_rate": 0.1,
+        "momentum": 0.9,
+        "weight_decay": 0.001,
+        "steps": 5,
+        "accuracy": 0.0196078431372549
+    },
+    {
+        "learning_rate": 0.1,
+        "momentum": 0.9,
+        "weight_decay": 0.001,
+        "steps": 10,
+        "accuracy": 0.025490196078431372
+    },
+    {
+        "learning_rate": 0.1,
+        "momentum": 0.99,
+        "weight_decay": 0.0001,
+        "steps": 3,
+        "accuracy": 0.025490196078431372
+    },
+    {
+        "learning_rate": 0.1,
+        "momentum": 0.99,
+        "weight_decay": 0.0001,
+        "steps": 5,
+        "accuracy": 0.03529411764705882
+    },
+    {
+        "learning_rate": 0.1,
+        "momentum": 0.99,
+        "weight_decay": 0.0001,
+        "steps": 10,
+        "accuracy": 0.043137254901960784
+    },
+    {
+        "learning_rate": 0.1,
+        "momentum": 0.99,
+        "weight_decay": 0.001,
+        "steps": 3,
+        "accuracy": 0.043137254901960784
+    },
+    {
+        "learning_rate": 0.1,
+        "momentum": 0.99,
+        "weight_decay": 0.001,
+        "steps": 5,
+        "accuracy": 0.03725490196078431
+    },
+    {
+        "learning_rate": 0.1,
+        "momentum": 0.99,
+        "weight_decay": 0.001,
+        "steps": 10,
+        "accuracy": 0.0392156862745098
+    }
+]
