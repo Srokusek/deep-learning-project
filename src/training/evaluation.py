@@ -8,8 +8,11 @@ import clip
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 @torch.no_grad()
-def eval(model, dataset, categories, batch_size, device, label=""):
+def eval(model, dataset, categories, batch_size, device, label="", return_ordered=False):
     model.eval()
+    if return_ordered:
+        correct_positions_list = []
+        target_list =[]
 
     #create contigous dictionary in the form category: index
     #helps to map categories to indices
@@ -42,12 +45,26 @@ def eval(model, dataset, categories, batch_size, device, label=""):
         image_features /= image_features.norm(dim=1, keepdim=True)
 
         #calculate the predicted class
-        predicted_class = (image_features @ text_features.T).argmax(dim=1) #(batch_size, feature_dims) @ (feature_dims, num_classes) -> (batch_size, num_classes)
+        logits = (image_features @ text_features.T)
+        predicted_class = logits.argmax(dim=1) #(batch_size, feature_dims) @ (feature_dims, num_classes) -> (batch_size, num_classes)
+                                               #(batch_size, num_classes).argmax(dim=1) -> (batch_size)
+        
+        if return_ordered:
+            _, indices = torch.sort(logits, dim=1, descending=True) #returns the logits ordered from high to low, along with the indices tensor
+            correct_positions = (indices == target.unsqueeze(1)).nonzero(as_tuple=True) #1 where true, 0 otherwise, unsqueeze truns it from (128) to (128,1) -> can broadcoast across 
+            predictions_order = correct_positions[1].to("cpu") #get index of correct prediction = order at which the index was predicted
+            correct_positions_list.append(predictions_order)
+            target_list.append(target)
 
         #need to use .item() because we obtain tensor(x)
         correct_predictions += (predicted_class==target).sum().item()
 
     accuracy = correct_predictions/len(dataset)
+
+    if return_ordered:
+        correct_positions_list = torch.cat(correct_positions_list).cpu().numpy()
+        target_list = torch.cat(target_list).cpu().numpy()
+        return correct_positions_list, target_list
     return accuracy
 
 #reference from https://github.com/openai/CLIP readme
